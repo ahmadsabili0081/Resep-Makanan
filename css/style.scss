@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+
+  h1 {
+    margin: 50px 0px;
+    text-align: center;
+  }
+
+  .wrapper__foods {
+    width: 500px;
+    margin: 50px auto;
+    height: auto;
+    padding: 10px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+
+    form {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0px;
+
+      input.search {
+        width: 100%;
+        padding: 10px;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid;
+        font-size: 16px;
+        margin: 0px 5px;
+      }
+
+      button.searchBtn {
+        margin: 0px 5px;
+        padding: 10px 20px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .favouriteFoods {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .boxFav {
+        position: relative;
+        width: 80px;
+        margin: 50px 5px;
+        height: 80px;
+        border-radius: 50%;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+        }
+
+        .close {
+          position: absolute;
+          right: 0;
+          top: 0;
+          cursor: pointer;
+
+          i {
+            pointer-events: none;
+          }
+        }
+
+        .title {
+          width: 90px;
+          height: 55px;
+          overflow: hidden;
+          text-align: center;
+          position: absolute;
+          bottom: -65px;
+          left: -10px;
+
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .foods {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+      .box__foods {
+        width: 230px;
+        height: auto;
+        margin: 10px 0px;
+        transition: 0.5s;
+        border-radius: 10px 10px 0px 0px;
+        box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.35);
+
+        img {
+          width: 100%;
+          height: 50%;
+          border-radius: 10px 10px 0px 0px;
+        }
+
+
+        .titleText {
+          margin: 10px 0px;
+          padding: 10px;
+          height: 130px;
+          position: relative;
+
+          .hearts {
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+            cursor: pointer;
+
+            i {
+              pointer-events: none;
+            }
+          }
+
+          .hearts.active {
+            color: red;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width:570px) {
+  .container {
+    width: 100%;
+
+    .wrapper__foods {
+      width: 100%;
+      padding: 30px 10px;
+      box-shadow: none;
+
+      .foods {
+        .box__foods {
+          width: 100%;
+          margin: 40px 0px;
+
+          img {
+            height: 60%;
+          }
+        }
+      }
+    }
+  }
+}

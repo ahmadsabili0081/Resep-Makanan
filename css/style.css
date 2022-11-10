@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container h1 {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.container .wrapper__foods {
+  width: 500px;
+  margin: 50px auto;
+  height: auto;
+  padding: 10px;
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.container .wrapper__foods form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px;
+}
+
+.container .wrapper__foods form input.search {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid;
+  font-size: 16px;
+  margin: 0px 5px;
+}
+
+.container .wrapper__foods form button.searchBtn {
+  margin: 0px 5px;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container .wrapper__foods .favouriteFoods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .wrapper__foods .favouriteFoods .boxFav {
+  position: relative;
+  width: 80px;
+  margin: 50px 5px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.container .wrapper__foods .favouriteFoods .boxFav img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.container .wrapper__foods .favouriteFoods .boxFav .close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+.container .wrapper__foods .favouriteFoods .boxFav .close i {
+  pointer-events: none;
+}
+
+.container .wrapper__foods .favouriteFoods .boxFav .title {
+  width: 90px;
+  height: 55px;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  bottom: -65px;
+  left: -10px;
+}
+
+.container .wrapper__foods .favouriteFoods .boxFav .title span {
+  font-size: 14px;
+}
+
+.container .wrapper__foods .foods {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .wrapper__foods .foods .box__foods {
+  width: 230px;
+  height: auto;
+  margin: 10px 0px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 10px 10px 0px 0px;
+  -webkit-box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.35);
+          box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+.container .wrapper__foods .foods .box__foods img {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.container .wrapper__foods .foods .box__foods .titleText {
+  margin: 10px 0px;
+  padding: 10px;
+  height: 130px;
+  position: relative;
+}
+
+.container .wrapper__foods .foods .box__foods .titleText .hearts {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  cursor: pointer;
+}
+
+.container .wrapper__foods .foods .box__foods .titleText .hearts i {
+  pointer-events: none;
+}
+
+.container .wrapper__foods .foods .box__foods .titleText .hearts.active {
+  color: red;
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    width: 100%;
+  }
+  .container .wrapper__foods {
+    width: 100%;
+    padding: 30px 10px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .container .wrapper__foods .foods .box__foods {
+    width: 100%;
+    margin: 40px 0px;
+  }
+  .container .wrapper__foods .foods .box__foods img {
+    height: 60%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
