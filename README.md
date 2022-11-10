@@ -1,6 +1,6 @@
 # Frontend Mentor - Resep Makanan
 
-![Design preview for the Easy-Bank-Landing coding challenge]()
+## Live Server - [Resep Makanan](https://ahmadsabili0081.github.io/Resep-Makanan/)
 
 ## Welcome! 👋
 
@@ -14,6 +14,5 @@
 - Local Storage
 
 
-- Website - [Ahmad sabili](https://ahmadsabili0081.github.io/MyProfileSite/)
 
 
